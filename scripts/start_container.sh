@@ -10,4 +10,4 @@ docker pull rahulkumar25/simple-python-flask-app
 # Run the Docker image as a container
 docker run -d -p5000:5000 rahulkumar25/simple-python-flask-app
 
-# installation successfull
+# installation successfull 
