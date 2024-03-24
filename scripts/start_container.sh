@@ -2,6 +2,7 @@
 set -e
 
 # install the Docker
+sudo su
 sudo apt install docker -y
 
 # Pull the Docker image from Docker Hub
