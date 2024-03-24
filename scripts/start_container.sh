@@ -3,7 +3,7 @@ set -e
 
 # install the Docker
 sudo su
-sudo apt install docker -y
+sudo apt install docker.io -y
 
 # Pull the Docker image from Docker Hub
 sudo docker pull rahulkumar25/simple-python-flask-app
