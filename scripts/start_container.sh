@@ -1,14 +1,18 @@
 #!/bin/bash
 set -e
 
-# install the Docker
-sudo su
-sudo apt install docker.io -y
+# Install Docker using the official Docker installation script
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
 
 # Pull the Docker image from Docker Hub
 sudo docker pull rahulkumar25/simple-python-flask-app
 
 # Run the Docker image as a container
-sudo docker run -d -p5000:5000 rahulkumar25/simple-python-flask-app
+sudo docker run -d -p 5000:5000 rahulkumar25/simple-python-flask-app
 
-# installation successfull 
+# Clean up
+rm get-docker.sh
+
+# Installation successful
+echo "Docker installation and container deployment completed successfully."
